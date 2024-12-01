@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Prueba Tecnica Grupo Redotos",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

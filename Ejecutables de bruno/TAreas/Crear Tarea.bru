@@ -1,0 +1,27 @@
+meta {
+  name: Crear Tarea
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/api/tasks/
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NGEyYTRhMDg1OTJmOWZkOWVkYmM3YiIsInJvbCI6IkFkbWluaXN0cmFkb3IiLCJpYXQiOjE3MzI5MTU3MzEsImV4cCI6MTczMjkxOTMzMX0.6oEO2SDpxTKkIVGnykLk5lJaYGPkBn0l0cCLXdtVLjw
+}
+
+body:json {
+  {
+    "title": "Tarea asignada a usuario",
+    "description": "Descripción de la tarea asignada",
+    "status": "pendiente",
+    "dueDate": "2024-12-10",
+    "priority": "media",
+    "assignedTo": "674a2767c9f9b3d70578eea0" 
+  }
+  
+}

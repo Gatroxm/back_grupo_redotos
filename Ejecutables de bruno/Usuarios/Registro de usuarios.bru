@@ -1,0 +1,21 @@
+meta {
+  name: Registro de usuarios
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/api/users/register
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nombre": "Andres Pérez",
+    "correo": "andres.perez@example.com",
+    "nickname": "Aperez",
+    "password": "Contraseña123",
+    "rol": "Usuario"
+  }
+}

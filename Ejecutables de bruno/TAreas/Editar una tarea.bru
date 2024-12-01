@@ -1,0 +1,18 @@
+meta {
+  name: Editar una tarea
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:3000/api/tasks/674a2c3e65f2429baf35b375
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "status": "en progreso",
+    "priority": "media"
+  }
+}
